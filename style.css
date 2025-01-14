@@ -1,0 +1,73 @@
+
+
+
+
+  /* hero2 */
+  :root {
+    --hero-height: 60vh;
+    --hero-max-height: 600px;
+  }
+  
+  .hero2 {
+    display: grid;
+    grid-template-areas: "hero";
+    place-items: center;
+  
+    height: var(--hero-height);
+    max-height: var(--hero-max-height);
+  
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero2 > * {
+    grid-area: hero;
+  }
+  
+  .hero2-content {
+    z-index: 1;
+    color: white;
+  }
+  
+  .hero2 > img {
+    z-index: -1;
+  
+    object-fit: cover;
+    height: min(var(--hero-height), var(--hero-max-height));
+    width: 100%;
+  }
+
+
+  body{
+    background-color: rgb(51, 51, 51) ;
+  }
+  
+  .topnav {
+    background-color: #988c8a;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #7d7270;
+
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #110c31;
+    color: rgb(#f2f2f2);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #0481aa;
+    color: white;
+  }
