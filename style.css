@@ -1,5 +1,10 @@
-
-
+@font-face {
+  font-family:myFirstFont ;
+  src: url(TitilliumWeb-Regular.ttf);
+}
+div{
+  font-family: myFirstFont;
+}
 
 
   /* hero2 */
@@ -17,6 +22,7 @@
     max-height: var(--hero-max-height);
   
     background-color: rgba(0, 0, 0, 0.5);
+    
   }
   
   .hero2 > * {
@@ -39,7 +45,14 @@
 
   body{
     background-color: rgb(51, 51, 51) ;
+    color: orange;
   }
+img{
+  size: 8px;
+  box-sizing: border-box;
+}
+
+
   
   .topnav {
     background-color: #988c8a;
@@ -62,12 +75,12 @@
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #110c31;
+    background-color:#9c5a03 ;
     color: rgb(#f2f2f2);
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #0481aa;
+    background-color: #aa6204;
     color: white;
   }
