@@ -46,6 +46,17 @@ div{
   body{
     background-color: rgb(51, 51, 51) ;
     color: orange;
+    font-family: myFirstFont;
+  }
+
+
+  .logo{
+    max-width: 10rem;
+    max-height: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 img{
   size: 8px;
