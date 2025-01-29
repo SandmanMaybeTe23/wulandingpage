@@ -1,0 +1,23 @@
+body{
+    display: grid;
+    place-content: center;
+    height: 100 px;
+}
+img{    
+max-width: 70%;
+max-height: 70%;
+
+}
+
+
+
+.card{
+    border: 1px solid black;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(10, 130, 10);
+    
+}

@@ -48,15 +48,19 @@ body {
   background-color: rgb(51, 51, 51);
   color: orange;
   font-family: myFirstFont;
+
+
 }
-.box{
-  border:solid orange;
-  padding:2rem;;
+
+.box {
+  border: solid orange;
+  padding: 2rem;
   background-color: rgb(10, 10, 10);
-  margin: 8rem;
-  display: flex;
-  flex-direction: column
-  
+  margin-inline: auto;
+  max-width: 80ch;
+  margin-top: 12ch;
+  padding-bottom: 18rem;
+
 }
 
 .logo {
@@ -74,8 +78,10 @@ img {
 }
 
 .rightimg {
-  float: right;
-  padding: 1.4rem;
+  float:right ;
+  border-radius: 100%;
+
+  
 }
 
 .topnav {
