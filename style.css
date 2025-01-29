@@ -49,6 +49,19 @@ body {
   color: orange;
   font-family: myFirstFont;
 
+.boximg{
+
+  border: solid orange;
+  padding: 2rem;
+  background-color: rgb(10, 10, 10);
+  margin-inline: auto;
+  max-width: 80ch;
+  margin-top: 12ch;
+  padding-bottom: 22rem;
+  max-height: auto;
+
+}
+
 
 }
 
@@ -59,8 +72,6 @@ body {
   margin-inline: auto;
   max-width: 80ch;
   margin-top: 12ch;
-  padding-bottom: 18rem;
-
 }
 
 .logo {
@@ -85,6 +96,7 @@ img {
 }
 
 .topnav {
+  color: rgb(10, 10, 10);
   background-color: #988c8a;
   overflow: hidden;
   display: flex;
@@ -94,12 +106,12 @@ img {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  background-color: #7d7270;
+  background-color: rgb(10, 10, 10);
 
 }
 
@@ -113,4 +125,28 @@ img {
 .topnav a.active {
   background-color: #aa6204;
   color: white;
+}
+
+
+.site-foot {
+  color: orange ;
+  background-color: rgb(10, 10, 10);
+  padding: 1.25rem;
+  margin-top: 2rem;
+}
+
+.site-foot ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-foot p {
+  margin-top: 3rem;
+  text-align:center ;
+  font-size: larger;
+  
 }
