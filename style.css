@@ -1,3 +1,6 @@
+
+
+
 @font-face {
   font-family: myFirstFont;
   src: url(TitilliumWeb-Regular.ttf);
@@ -12,18 +15,22 @@ div {
 :root {
   --hero-height: 60vh;
   --hero-max-height: 600px;
+
+  --Brown-Orange:rgba(216, 123, 0);
+  --Orange:rgba(255,165,0);
+  --Black:rgba(10,10,10);
+  --Silver: rgba(152, 140, 138);
+  --Wit:rgba(255,255,255);
+  --Background-Black:rgba(51, 51, 51);
 }
 
 .hero2 {
   display: grid;
   grid-template-areas: "hero";
   place-items: center;
-
   height: var(--hero-height);
   max-height: var(--hero-max-height);
-
-  background-color: rgba(0, 0, 0, 0.5);
-
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 .hero2>* {
@@ -45,15 +52,15 @@ div {
 
 
 body {
-  background-color: rgb(51, 51, 51);
-  color: orange;
+  background-color: var(--Background-Black);
+  color: var(--Orange);
   font-family: myFirstFont;
 
 .boximg{
 
-  border: solid orange;
+  border: solid var(--Orange);
   padding: 2rem;
-  background-color: rgb(10, 10, 10);
+  background-color: var(--Black);
   margin-inline: auto;
   max-width: 80ch;
   margin-top: 12ch;
@@ -66,9 +73,9 @@ body {
 }
 
 .box {
-  border: solid orange;
+  border: solid var(--Orange);
   padding: 2rem;
-  background-color: rgb(10, 10, 10);
+  background-color: var(--Black);
   margin-inline: auto;
   max-width: 80ch;
   margin-top: 12ch;
@@ -96,8 +103,8 @@ img {
 }
 
 .topnav {
-  color: rgb(10, 10, 10);
-  background-color: #988c8a;
+  color: var(--Black);
+  background-color: var(--Silver);
   overflow: hidden;
   display: flex;
   justify-content: space-around;
@@ -106,31 +113,31 @@ img {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: white;
+  color: var(--Wit);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  background-color: rgb(10, 10, 10);
+  background-color: var(--Black);
 
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #9c5a03;
+  background-color: var(--Brown-Orange);
   color: rgb(#f2f2f2);
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #aa6204;
+  background-color: var(--Brown-Orange);
   color: white;
 }
 
 
 .site-foot {
-  color: orange ;
-  background-color: rgb(10, 10, 10);
+  color: var(--Orange) ;
+  background-color: var(--Black);
   padding: 1.25rem;
   margin-top: 2rem;
 }
@@ -149,4 +156,46 @@ img {
   text-align:center ;
   font-size: larger;
   
+}
+li{
+  width: 10rem;
+  display: grid;
+  place-items:center;
+  border: 1px solid var(--Wit)
+}
+
+
+.color-list{
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  list-style: none;
+} 
+
+.black{
+  background-color: var(--Black);
+}
+.orange{
+  background-color: var(--Orange);
+  color: var(--Black);
+}
+.brown-orange{
+  background-color: var(--Brown-Orange);
+  color: var(--Black);
+}
+.wit{
+  background-color: var(--Wit);
+}
+.background-black{
+  background-color: var(--Background-Black);
+}
+.sliver{
+  background-color: var(--Silver);
+}
+
+.example-img{
+  max-width: 50%;
+  max-height: 50%;
+  width: 100px;
+  height: 100px;
 }
