@@ -125,13 +125,13 @@ img {
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: var(--Brown-Orange);
-  color: rgb(#f2f2f2);
+  color: var(--Black)
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: var(--Brown-Orange);
-  color: white;
+  color: var(--Black);
 }
 
 
@@ -185,17 +185,19 @@ li{
 }
 .wit{
   background-color: var(--Wit);
+  color: black;
 }
 .background-black{
   background-color: var(--Background-Black);
 }
 .sliver{
   background-color: var(--Silver);
+  color: black;
 }
 
 .example-img{
   max-width: 50%;
   max-height: 50%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
