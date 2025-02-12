@@ -19,7 +19,7 @@ div {
   --Brown-Orange:rgba(216, 123, 0);
   --Orange:rgba(255,165,0);
   --Black:rgba(10,10,10);
-  --Silver: rgba(152, 140, 138);
+  --Brown-Orange-nav: rgb(216, 123, 0);
   --Wit:rgba(255,255,255);
   --Background-Black:rgba(51, 51, 51);
 }
@@ -82,11 +82,12 @@ body {
 }
 
 .logo {
-  max-width: 10rem;
-  max-height: 10rem;
+  max-width: 5%;
+  max-height: 5%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: -20px;
   width: 50%;
 }
 
@@ -104,7 +105,7 @@ img {
 
 .topnav {
   color: var(--Black);
-  background-color: var(--Silver);
+  background-color: var(--Brown-Orange-nav);
   overflow: hidden;
   display: flex;
   justify-content: space-around;
@@ -124,13 +125,13 @@ img {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: var(--Brown-Orange);
+  background-color: var(--Orange);
   color: var(--Black)
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: var(--Brown-Orange);
+  background-color: var(--Orange);
   color: var(--Black);
 }
 
@@ -167,9 +168,11 @@ li{
 
 .color-list{
   display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: space-around;
-  gap: 1rem;
   list-style: none;
+  padding-top: 1px;
 } 
 
 .black{
@@ -191,7 +194,7 @@ li{
   background-color: var(--Background-Black);
 }
 .sliver{
-  background-color: var(--Silver);
+  background-color: var(--Brown-Orange-nav);
   color: black;
 }
 
@@ -200,4 +203,9 @@ li{
   max-height: 50%;
   width: 200px;
   height: 200px;
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
 }
